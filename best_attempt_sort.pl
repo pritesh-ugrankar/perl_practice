@@ -20,7 +20,6 @@ sub sortie {
 	@biglist = ($smallest_so_far..$biggest_so_far);
 
 	foreach my $bignum ( @biglist) {
-
 		foreach my $sortnum (@sortit) {
 			if ($bignum == $sortnum) {
 				push @sorted, $bignum; 
