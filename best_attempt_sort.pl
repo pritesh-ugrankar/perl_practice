@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-my @array = (-01111, 10,1,3,-30,5,-100,0,-1,0xFF,-3,30,3,2,-300,-0xFF);
+my @array = (30,5,7,9,8, -01111,-10,1,3,9,-30,5,-100,0,-1,0xFF,-3,30,3,2,-300,-0xFF,15);
 
 sub sortie {
 	my @sorted;
@@ -27,8 +27,8 @@ sub sortie {
 	}
 
  }
- 	print "\@array = @array\n";
-	print "\@sorted = @sorted\n";
+ 	print "\@array with  ", scalar @array,   " elements   =  @array\n";
+	print "\@sorted with ", scalar @sorted, " elements   =  @sorted\n";
 }
 
 sortie(@array);
